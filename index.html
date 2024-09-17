@@ -1,52 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Gallery</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
+<html>
+    <head>
+        <style>
+            div.gallery {
+                border: 1px solid #ccc;
+            }
 
+            div.gallery:hover {
+                border: 1px solid #777;
+            }
+
+            div.gallery img {
+                width: 100%;
+                height: auto;
+            }
+
+            div.desc {
+                padding: 15px;
+                text-align: center;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            .responsive {
+                padding: 0 6px;
+                float: left;
+                width: 24.99999%;
+            }
+
+            /* @media only screen and (max-width: 1000px) {
+                .responsive {
+                    width: 33%;
+                    margin: 6px 0;
+                }
+            } */
+
+            @media only screen and (max-width: 870px) {
+                .responsive {
+                    width: 49.99999%;
+                    margin: 6px 0;
+                }
+            }
+
+            @media only screen and (max-width: 600px) {
+                .responsive {
+                    width: 100%;
+                }
+            }
+
+            .clearfix:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+        </style>
+    </head>
 <body>
-    <header>
-        <div class="headerclass">
-            <h1>Indian Monuments Gallery</h1>
+
+    <div>
+        <h1>Image Gallery</h1>
+    </div>
+
+    <h4>Add your beautiful pictures here and view them with compatibility on every screen.</h4>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="#">
+                <img src="images/taj.jpg" alt="Cinque Terre" width="600" height="400">
+            </a>
+            <div class="desc">Add a description of the image here</div>
         </div>
-    </header>
-    <br>
-    <main>
-        <div class="mainbox">
+    </div>
 
-            <div class="item">
-                <div class="imagebox">
-                    <img class="each_image" src="images/taj.jpg" alt="no image" >
-                </div>
-                <p class="imageboxtext">Taj Mahal : Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi tempora sed, ratione laboriosam nostrum dicta doloremque quia quibusdam alias, placeat sint maxime adipisci officia sunt eius a ducimus. Eaque, mollitia!. laboriosam nostrum dicta doloremque quia quibusdam alias, placeat sint maxime adipisci officia sunt eius a ducimus. Eaque, mollitia!</p>
-            </div>
 
-            <div class="item">
-                <div class="imagebox">
-                    <img class="each_image" src="images/hawamahal.jpg" alt="no image" >
-                </div>
-                <p class="imageboxtext">Hawa Mahal : Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, labore ab ipsam earum perspiciatis accusantium doloribus ad fuga aperiam veniam sequi eaque nam odit nihil sunt saepe? Odit, minima dolor.</p>
-            </div>
-
-            <div class="item">
-                <div class="imagebox">
-                    <img class="each_image" src="images/redfort.jpg" alt="no image" >
-                </div>
-                <p class="imageboxtext">Red Fort : Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut explicabo hic soluta natus quas! Enim quia, a fugit adipisci vitae dolorum quidem dolorem vero reiciendis error illum quo commodi facere.</p>
-            </div>
-
-            <div class="item">
-                <div class="imagebox">
-                    <img class="each_image" src="images/mysurupalace.jpg" alt="no image" >
-                </div>
-                <p class="imageboxtext">Mysore Palace : Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias architecto temporibus voluptates alias magnam vel itaque, atque porro ea provident debitis ex at eos amet enim, quae iusto non aperiam!</p>
-            </div>
-
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="#">
+                <img src="images/hawamahal.jpg" alt="Forest" width="600" height="400">
+            </a>
+            <div class="desc">Add a description of the image here</div>
         </div>
-    </main>
-    
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="#">
+                <img src="images/redfort.jpg" alt="Northern Lights" width="600" height="400">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="#">
+                <img src="images/imambda.jpg" alt="Mountains" width="600" height="400">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+    </div>
+
+
 </body>
 </html>
