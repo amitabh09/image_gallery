@@ -1,92 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style>
-
-            .main_container{
-                border: 1px solid rgb(20, 20, 18);
-                padding: 5px;
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                row-gap: 10px;
-                column-gap: 10px;
-            }
-
-            .container{
-                border: 1px solid red;
-                padding: 5px;
-            }
-
-            .container_image{
-                width: 100%;
-                height: 350px;
-            }
-
-            .desc{
-                padding: 3px;
-            }
-
-            @media only screen and (max-width: 1350px) {
-                .container_image{
-                width: 100%;
-                height: 250px;
-            }
-            }
-
-            @media only screen and (max-width: 1150px) {
-                .main_container{
-                    grid-template-columns: 1fr 1fr;
-                }
-                .container_image {
-                    width: 100%;
-                    height: 300px;
-                }
-            }
-
-            @media only screen and (max-width: 950px) {
-                .main_container{
-                    grid-template-columns: 1fr 1fr;
-                }
-                .container_image {
-                    width: 100%;
-                    height: 280px;
-                }
-            }
-
-            @media only screen and (max-width: 850px) {
-                .main_container{
-                    grid-template-columns: 1fr 1fr;
-                }
-                .container_image {
-                    width: 100%;
-                    height: 260px;
-                }
-            }
-            
-            @media only screen and (max-width: 750px) {
-                .main_container{
-                    grid-template-columns: 1fr 1fr;
-                }
-                .container_image {
-                    width: 100%;
-                    height: 240px;
-                }
-            }
-            
-            @media only screen and (max-width: 600px) {
-                .main_container{
-                    grid-template-columns: 1fr;
-                }
-                .container_image {
-                    width: 100%;
-                    height: 350px;
-                }
-            }
-
-        </style>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Home</title>
     </head>
 
     <body>
+
+        <header>
+            <nav>
+                <div></div>
+            </nav>
+        </header>
+
         <main>
             <div>
                 <h1>Image Gallery</h1>
@@ -117,5 +43,13 @@
 
             </div>
         </main>
+
+        <footer>
+            <div class="footer">
+                <div class="footer_address">Registered Address: Shri Sai Balaji, Kundanahalli Colony, Whitefield, Bengaluru, Karnataka (560048) </div>
+                <div class="footer_container">imagegallery.com</div>
+                <div class="footer_links"></div>
+            </div>
+        </footer>
     </body>
 </html>
