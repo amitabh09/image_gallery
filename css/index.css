@@ -51,13 +51,33 @@
 }
 
 .footer_links{
-    padding: 20px;
-    font-size: 26px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     width: 100%;
     height: 220px;
-    text-align: center;
+    justify-items: center;
+}
+
+.footer_icon {
+    width: 64px;
+    height: auto;
+}
+
+.navbar {
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.navbar_content {
+    color: white;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    padding: 10px;
 }
 
 /* Media Query for Responsive Design */
