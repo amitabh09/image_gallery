@@ -1,3 +1,16 @@
+.backgroundimg {
+    width: 100%;
+}
+.back_cont {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+
+
 .main_container{
     /* border: 1px solid rgb(20, 20, 18); */
     padding: 5px;
@@ -23,6 +36,7 @@
 }
 
 .footer{
+    margin-top: 20px;
     background-color: black;
     padding: 5px;
     display: grid;
@@ -52,6 +66,7 @@
 }
 
 .footer_links{
+    margin-top: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
@@ -146,3 +161,4 @@ a {
         height: 350px;
     }
 }
+
